@@ -1,0 +1,2 @@
+rootProject.name = "NotesApplicationLiveData"
+include ':app'

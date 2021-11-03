@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/litegray"
+    tools:context=".Activity.InsertNotesActivity">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/notesTitle"
+            android:theme="@style/textColorHint"
+            android:textColor="@color/DarkGrayBorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/product_sans_regular"
+            android:hint="Add Title..."
+            android:padding="15dp"
+            />
+
+        <EditText
+
+            android:id="@+id/notesSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/product_sans_regular"
+            android:hint="Add Sub Title..."
+            android:padding="15dp"
+            android:textColor="@color/DarkGrayBorder" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Priority"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/product_sans_regular"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="10dp"
+                android:id="@+id/GreenPriority"
+                android:background="@drawable/green_priority"
+                android:src="@drawable/ic_baseline_done_24"
+                />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_margin="10dp"
+                android:layout_height="25dp"
+                android:id="@+id/YellowPriority"
+                android:background="@drawable/yellow_priority"
+                />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:id="@+id/RedPriority"
+                android:layout_height="25dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/red_priority"
+                />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/notesData"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/product_sans_regular"
+            android:gravity="start"
+            android:hint="Type Notes..."
+
+            android:padding="15dp"
+            android:textColor="@color/DarkGrayBorder"/>
+
+    </LinearLayout>
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="26dp"
+            android:id="@+id/doneNotesBtn"
+            app:backgroundTint="@color/red"
+            android:src="@drawable/ic_baseline_done_24"/>
+
+
+
+
+
+
+</RelativeLayout>
